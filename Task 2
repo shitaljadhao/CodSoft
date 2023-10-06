@@ -1,0 +1,59 @@
+/*Input: Take marks obtained (out of 100) in each subject.
+Calculate Total Marks: Sum up the marks obtained in all subjects.
+Calculate Average Percentage: Divide the total marks by the total number
+of subjects to get the
+average percentage.
+Grade Calculation: Assign grades based on the average percentage achieved.
+Display Results: Show the total marks, average percentage, and the
+corresponding grade to the user.*/
+ 
+ 
+ import java .util.*;
+ class Check{
+ public static void main(String[]args){
+ Scanner sc=new Scanner(System.in);
+ 
+ System.out.println("enter the English marks");
+ int marks1=sc.nextInt();
+ System.out.println("enter the Physics marks");
+ int marks2=sc.nextInt();
+ System.out.println("enter the Maths marks");
+ int marks3=sc.nextInt();
+ System.out.println("enter the Chemistry marks");
+ int marks4=sc.nextInt();
+ System.out.println("enter the Biology marks");
+ int marks5=sc.nextInt();
+ 
+ 
+ int sum=0;
+ sum=marks1+marks2+marks3+marks4+marks5;
+ System.out.println("Your total marks sum is "+ sum);
+ 
+ int avg=0;
+ avg=(marks1+marks2+marks3+marks4+marks5)/5;
+ System.out.println("Your total Average % is "+ avg);
+ 
+ 
+ if(avg>35 && avg <50){
+ System.out.println("You are Pass with the 'D' grade");
+ }
+ 
+ else if(avg>50 && avg <70){
+ System.out.println("You are Pass with the 'C' grade");
+ }
+ 
+ else if(avg>70 && avg <90){
+ System.out.println("You are Pass with the 'B' grade");
+ }
+ 
+ else if(avg >=90){
+ System.out.println("You are Pass with the 'A' grade");
+ }
+ 
+ else
+ {
+ System.out.println("You are failed");
+ }
+ 
+ }
+ }
